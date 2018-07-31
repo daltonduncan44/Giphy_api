@@ -19,10 +19,12 @@ h3 {
 }
 
 p{
-    color: whitesmoke;
+    color: gray;
+    font-weight: bolder;
 }
 #gif-container{
     margin: 0pc 0pc 0pc 2pc;
+    background-image: url("images.png")
 }
 .inputGroup{
     margin: 0pc 0pc 0pc 2pc;

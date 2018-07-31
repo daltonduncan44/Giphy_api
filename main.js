@@ -1,7 +1,7 @@
 
 
 //set array to have preset buttons
-var topics = ["It","lion king","step brothers","spiderman", "iron man","top gun","happy gilmore"];
+var movieArr = ["It","lion king","step brothers","spiderman", "iron man","top gun","happy gilmore"];
 //set var to cap the number of gits
 var numberOfGIFs = 10;
 //set var to cap rating
@@ -9,11 +9,11 @@ var cutOffRating = "PG";
 //"gQeBWleLEAwNNxxJTV5wnK0YZO6PK1lD"
 // function to add buttons dynamically to dom
 function makeButtons(){
-	for(var i = 0; i < topics.length; i++) {
+	for(var i = 0; i < movieArr.length; i++) {
 		var newButton = $("<button>");
 		newButton.addClass("btn");
 		newButton.addClass("newMovieButton");
-		newButton.text(topics[i]);
+		newButton.text(movieArr[i]);
 		$("#button-container").append(newButton);
 	}
 	$(".newMovieButton").unbind("click");
@@ -28,8 +28,8 @@ function makeButtons(){
 }
 // function to add new buttons to array
 function addButton(movie){
-	if(topics.indexOf(movie) === -1) {
-		topics.push(movie);
+	if(movieArr.indexOf(movie) === -1) {
+		movieArr.push(movie);
 		//clear out old giphs 
 		$("#button-container").empty();
 		makeButtons();

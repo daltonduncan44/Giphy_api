@@ -1,7 +1,7 @@
 
 
 //set array to have preset buttons
-var movieArr = ["It","lion king","step brothers","spiderman", "iron man","top gun","happy gilmore"];
+var movieArr = ["It","lion king","step brothers","spiderman", "iron man","top gun","happy gilmore","jurrasic park","starwars","the ring","national treasure"];
 //set var to cap the number of gits
 var numberOfGIFs = 10;
 //set var to cap rating

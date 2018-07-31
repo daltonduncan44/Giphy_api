@@ -30,6 +30,7 @@ function makeButtons(){
 function addButton(movie){
 	if(topics.indexOf(movie) === -1) {
 		topics.push(movie);
+		//clear out old giphs 
 		$("#button-container").empty();
 		makeButtons();
 	}
@@ -54,7 +55,7 @@ function getterGIFContainer(movie){
 			$("#gif-container").append(newDiv);
 		});
 		// animate the giphs state on click
-		$("#gif-container").addClass("dotted-border");
+		
 		$(".gif-image").unbind("click");
 		$(".gif-image").on("click", function(){
 			if($(this).attr("state") === "still") {
@@ -68,7 +69,7 @@ function getterGIFContainer(movie){
 		});
 	});
 }
-//function to run on screen open to set the stage with buttons and input box
+//function to run on screen open to set the stage with buttons and input 
 $(document).ready(function(){
 	makeButtons();
 	$("#submit").on("click", function(){

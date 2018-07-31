@@ -1,20 +1,34 @@
+body{
+    background-color:black;
+}
+
+
 #button-container{
 margin: 0pc 0pc 0pc 2pc; 
 
 }
 h1{
-
+    color: whitesmoke;
     margin: 0pc 0pc 0pc 2pc; 
 
 }
 
 h3 {
     margin: 0pc 0pc 0pc 2pc; 
+    color: whitesmoke;
+}
 
+p{
+    color: whitesmoke;
 }
 #gif-container{
     margin: 0pc 0pc 0pc 2pc;
 }
 .inputGroup{
     margin: 0pc 0pc 0pc 2pc;
+}
+button {
+margin: .5pc;
+
+
 }
